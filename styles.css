@@ -1,0 +1,777 @@
+/* Start Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+
+/* End Imports */
+
+/* Start Basic Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monserrat', sans-serif;
+    overflow-x: hidden;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+/* End Basic Reset */
+
+/* Start Set Variables */
+:root{
+    --primary: #ff7200;
+    --font-color: whitesmoke;
+    --backGround: black;
+}
+/* End Set Variables */
+
+/* Start Base Style */
+
+.home-container{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%), url(img/background-taco.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.home-container .main-nav h1{
+    color: var(--primary);
+    font-size: 1.6em;
+}
+
+.home-container .main-nav .nav li a{
+    color: var(--font-color);
+}
+
+#welcome .welcome-text h2{
+    color: var(--font-color);
+}
+
+#welcome .welcome-text h2 span{
+    color: var(--primary);
+}
+
+#welcome .welcome-text p{
+    color: var(--font-color);
+}
+
+#view-menu{
+    margin: 10px;
+}
+
+.slider{
+    margin-bottom: 20px;
+}
+
+.slider .images img{
+    display: block;
+    width: 95%;
+    height: 200px;
+    margin: 20px auto 10px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.slider .images p{
+    width: 35%;
+    color: var(--font-color);
+    text-align: center;
+    margin-inline: auto;
+    padding-bottom: 10px;
+}
+
+
+/* End Base Style */
+
+/* Start Mobile Style */
+
+/* Welcome Section */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.nav{
+    display: none;
+}
+
+.home-container .main-nav{
+    margin: 20px;
+}
+
+.home-container .main-nav h1{
+    padding-bottom: 5px;
+    grid-column: 1/5;
+    grid-row: 1;
+    text-align: left;
+    border-bottom: 3px solid whitesmoke;
+}
+
+#welcome{
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+}
+.welcome-text{
+    grid-column: 1/9;
+    grid-row: 1;
+    text-align: left;
+}
+
+.welcome-text h2{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.welcome-text h2 span{
+    font-size: 1.6em;
+}
+
+.welcome-text p{
+    font-size: 1.5em;
+}
+
+.welcome-text p span{
+    color: #ff7200;
+}
+
+#view-menu a{
+    grid-column: 1/4;
+    grid-row: 1;
+    border: 2px solid var(--primary);
+    color: var(--font-color);
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#view-menu a:hover{
+    background-color: var(--primary);
+    transition: 0.5s;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%), url(img/taco-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-attachment: fixed;
+    padding: 20px;
+}
+/* About Us Section */
+
+/* .about-container {
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%), url(img/background-taco.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+} */
+
+.about-us h2{
+    color: var(--primary);
+    font-size: 2.5em;
+    margin: 5px;
+}
+
+.about-us p{
+    color: var(--font-color);
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    margin-inline: auto;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.trivia{
+    margin-top: 20px;
+}
+
+.trivia h2{
+    color: var(--primary);
+    font-size: 1.6em;
+    padding-bottom: 10px;
+}
+
+.trivia{
+    margin-bottom: 20px;
+}
+.trivia p{
+    color: var(--font-color);
+    font-size: 1.2em;
+    line-height: 30px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.trivia p a{
+    color: rgb(182, 111, 249);
+}
+.trivia p a:hover{
+    color: aquamarine;
+    transition: 0.5s ease;
+}
+
+.taco-photo img{
+    width: 90%;
+    height: auto;
+    margin: 10px auto 5px;
+    border-radius: 5px;
+}
+
+.taco-label{
+    color: var(--font-color);
+    margin-bottom: 30px;
+}
+
+.menu-container{
+    text-align: center;
+}
+
+.menu-container h2{
+    color: var(--primary);
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.table-container{
+    background: rgba(0,0,0,0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-inline: auto;
+}
+.menu{
+    text-align: center;
+    width: 80%;
+    margin-inline: auto;
+    color: var(--primary);
+    font-size: 1.5em;
+}
+th, td, caption {
+    border: 1px solid var(--font-color);
+    font-family: 'Montserrat', sans-serif;
+    border-collapse: separate;
+    padding: 0.5rem;
+}
+
+/* Store Hours | Contact Us Section */
+
+/* .shop-contact-container{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%), url(img/main-page-bg.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    
+} */
+
+.storeHours-container{
+    margin: 20px;
+}
+
+.storeHours h2{
+    color: var(--primary);
+    font-size: 1.6em;
+}
+
+.store-hours{
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    margin-inline: auto;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: var(--font-color);
+    line-height: 30px;
+}
+
+.store-hours dd{
+    padding-bottom: 10px;
+}
+
+.location h2{
+    color: var(--primary);
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.location .address{
+    background: rgba(0,0,0,0.8);
+    width: 80%;
+    margin-inline: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: var(--font-color);
+    font-size: 1.2em;
+}
+
+.address p{
+    padding-top: 10px;
+}
+.address a{
+    padding-left: 5px;
+    color: rgb(182, 111, 249);
+}
+.address a:hover{
+    color: aquamarine;
+    transition: 0.5s ease;
+}
+
+.tacoTray-photo img{
+    width: 90%;
+    height: auto;
+    margin: 10px auto 5px;
+    border-radius: 5px;
+}
+
+.tacoTray-label{
+    color: var(--font-color);
+    margin-bottom: 30px;
+}
+
+.form-container h2{
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    padding-top: 10px;
+}
+
+.form-container form{
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 15px 30px;
+    color: var(--primary);
+}
+
+.form-container form legend{
+    padding-bottom: 10px;
+}
+
+.form-container form input, textarea{
+    width: 85%;
+    margin: 5px;
+    padding: 20px;
+    background: transparent;
+    border-bottom: 2px solid var(--primary);
+    color: var(--font-color);
+    text-align: center;
+    font-size: 0.9em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.form-container form input{
+    height: 30px;
+}
+
+.form-container form textarea{
+    width: 90%;
+    resize: none;
+}
+
+.form-container button{
+    margin: 5px 10px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid var(--primary);
+    background-color: transparent;
+    color: var(--font-color);
+    border-radius: 15px;
+}
+
+.form-container button:hover{
+    background-color: var(--primary);
+    transition: 0.5s;
+}
+
+.footer{
+    border-top: 3px solid var(--primary);
+    text-align: center;
+    color: var(--primary);
+    padding: 20px 0;
+    line-height: 35px;
+    font-size: 1em;
+    width: 85%;
+    margin-inline: auto;
+}
+
+.footer .back a{
+    color: var(--primary);
+}
+
+.footer .back a:hover{
+    color: aquamarine;
+    transition: 0.5s ease;
+}
+/* End Mobile Style */
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+    .home-container .main-nav h1{
+        padding-bottom: 5px;
+        grid-column: 5/9;
+        grid-row: 1;
+        text-align: right;
+        border-bottom: 3px solid whitesmoke;
+        font-size: 1.8em;
+    }
+    
+    #welcome{
+        margin-top: 50px;
+        padding: 10px;
+        width: 100%;
+    }
+    .welcome-text{
+        grid-column: 2/9;
+        grid-row: 1;
+        text-align: right;
+    }
+
+    #view-menu a{
+        grid-column: 6/9;
+        grid-row: 1;
+        font-size: 1.2em;
+    }
+
+    .welcome-text h2{
+        margin-bottom: 20px;
+        font-size: 2.2em;
+    }
+    
+    .welcome-text h2 span{
+        font-size: 1.8em;
+    }
+    
+    .welcome-text p{
+        font-size: 1.8em;
+    }
+
+/*     .slider .images img{
+        display: block;
+        width: 85%;
+        height: 350px;
+        margin: 20px auto 10px;
+        border-radius: 15px;
+        padding: 2px;
+    } */
+
+    .about-us p{
+        width: 80%;
+    }
+
+    .trivia p{
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .taco-photo{
+        width: 70%;
+        margin: 20px auto 5px;
+        border-radius: 5px;
+    }
+
+    .table-container{
+        background: rgba(0,0,0,0.8);
+        border-radius: 20px;
+        padding: 40px 20px;
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .tacoTray-photo img{
+        width: 70%;
+        height: auto;
+    }
+
+    .store-hours{
+        width: 63%;
+    }
+
+    .location .address{
+        width: 60%;
+    }
+
+    .tacoTray-photo img{
+        width: 63%;
+    }
+
+    .form-container form{
+        width: 80%;
+    }
+}
+
+/* end small tablet styles */
+
+/* large tablets and laptops styles */
+@media screen and (min-width: 980px) {
+    .home-container .main-nav h1{
+        padding: 10px 0;
+        grid-column: 6/9;
+        grid-row: 1;
+        text-align: right;
+        border-bottom: none;
+        font-size: 2em;
+    }
+
+    .home-container .main-nav ul{
+        display: flex;
+        grid-column: 1/6;
+        grid-row: 1;
+        justify-content: flex-end;
+        align-self: center;
+    }
+
+    .home-container .main-nav li{
+        margin-left: 50px;
+    }
+
+    .home-container .main-nav .nav li a{
+        text-transform: uppercase;
+        color: var(--font-color);
+    }
+
+    .home-container .main-nav .nav li a:hover{
+        color: var(--primary);
+        transition: 0.5s ease;
+    }
+
+    #view-menu a{
+        grid-column: 7/9;
+        grid-row: 1;
+        font-size: 1.4em;
+    }
+
+    .welcome-text h2{
+        margin-bottom: 20px;
+        font-size: 2.4em;
+    }
+    
+    .welcome-text h2 span{
+        font-size: 2em;
+    }
+    
+    .welcome-text p{
+        font-size: 2em;
+    }
+
+/*     .slider .images img{
+        display: block;
+        width: 80%;
+        height: 400px;
+        margin: 20px auto 10px;
+        border-radius: 15px;
+        padding: 2px;
+    } */
+
+    .about-us h2{
+        font-size: 2.8em;
+    }
+    
+    .about-us p{
+        font-size: 1.4em;
+        width: 80%;
+        margin-inline: auto;
+    }
+    
+    .trivia h2{
+        font-size: 1.8em;
+    }
+    
+    .trivia p{
+        font-size: 1.4em;
+        width: 80%;
+        margin-inline: auto;
+    }
+    
+    .taco-photo{
+        width: 60%;
+        margin: 10px auto 5px;
+        border-radius: 5px;
+    }
+    
+    .menu-container{
+        text-align: center;
+    }
+    
+    .menu-container h2{
+        color: var(--primary);
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+    
+    .table-container{
+        background: rgba(0,0,0,0.8);
+        border-radius: 10px;
+        padding: 40px 20px;
+        width: 80%;
+        margin-inline: auto;
+    }
+    .menu{
+        text-align: center;
+        color: var(--primary);
+        font-size: 1.6em;
+    }
+    th, td, caption {
+        border: 1px solid var(--font-color);
+        font-family: 'Montserrat', sans-serif;
+        border-collapse: separate;
+        padding: 0.5rem;
+    }
+    
+    .storeHours h2{
+        font-size: 1.8em;
+    }
+    
+    .store-hours{
+        width: 63%;
+        font-size: 1.6em;
+    }
+    
+    .location h2{
+        font-size: 1.8em;
+    }
+    
+    .location .address{
+        width: 60%;
+        font-size: 1.4em;
+    }
+    
+    .tacoTray-photo img{
+        width: 53%;
+    }
+    
+    .form-container h2{
+        font-size: 2em;
+    }
+    
+    .form-container form{
+        width: 80%;
+    }
+    
+    .form-container form legend{
+        font-size: 1em;
+    }
+    
+    .form-container form input, textarea{
+        font-size: 1.2em;
+    }
+    
+    .form-container button{
+        width: 150px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .footer{
+        font-size: 1.2em;
+    }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+
+    .home-container .main-nav{
+        margin-right: 30px;
+    }
+    .home-container .main-nav h1{
+        font-size: 2.4em;
+    }
+
+    .home-container .main-nav ul{
+        grid-column: 1/7;
+        padding-top: 5px;
+    }
+
+    .home-container .main-nav li{
+        margin-left: 50px;
+    }
+
+    #view-menu a{
+        margin-right: 20px;
+        margin-bottom: 70px;
+    }
+
+    .welcome-text{
+        margin-top: 40px;
+        margin-right: 20px;
+    }
+
+    .slider .images img{
+        width: 50%;
+        height: 300px;
+    }
+
+    .about-us p{
+        width: 60%;
+    }
+    
+
+    .trivia p{
+        width: 60%;
+    }
+    
+    .taco-photo{
+        width: 40%;
+    }
+    
+    .table-container{
+        width: 60%;
+    }
+    
+    .store-hours{
+        width: 53%;
+    }
+    
+    .location .address{
+        width: 51.5%;
+    }
+    
+    .tacoTray-photo img{
+        width: 36%;
+    }
+    
+    .form-container h2{
+        font-size: 2em;
+    }
+    
+    .form-container form{
+        width: 60%;
+    }
+    
+    .form-container form legend{
+        font-size: 1em;
+    }
+    
+    .form-container form input, textarea{
+        font-size: 1.2em;
+    }
+    
+    .form-container button{
+        width: 150px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+}
